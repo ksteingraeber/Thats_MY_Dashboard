@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>That's MY Dashboard</title>
+
+        <!-- Script für Bundesliga-Tabelle -->
+        <script src="./football_table.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var fblWidgetSettings = {
+              compactview: false,  // eine kompaktere Darstellung              
+              // hebt in allen Widgets die Teamnamen hervor:
+              teamsToHighlight: ['Bremen'],
+            };
+          </script>
+
+        <!-- Skript für den Spielplan -->
+        <script src=".//football_matches_overview.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        var fblWidgetSettings = {
+            teamsToHighlight: ['Bremen'],
+        };
+        </script>
+
+
+    </head>
+    <body>
+            <h1>Bundesliga:</h1>
+            <div id="fblwidget_matches"></div>
+            <div id="fblwidget_table"></div>
+            
+    </body>
+</html>
